@@ -59,3 +59,12 @@ mode = "sequential"
 [[workflows.workflow.tasks]]
 task = "shell.exec"
 args = "npx eas build --platform android --profile production"
+
+[[workflows.workflow]]
+name = "EAS Build iOS"
+author = 41233287
+mode = "sequential"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "npx eas build --platform ios --profile preview"
